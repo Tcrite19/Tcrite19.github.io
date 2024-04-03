@@ -7,6 +7,7 @@
 /*==================== scroll reveal ====================*/
 /*==================== typed js ====================*/
 const body = document.querySelector('body');
+const pic = document.querySelector('personal-portfolio-pic.png');
 console.log(body);
 const header = document.createElement('header');
 header.setAttribute('class', 'header');
@@ -65,7 +66,7 @@ contentDiv.appendChild(myName);
 const whatIAm = document.createElement('h3');
 const job = document.createElement('span');
 job.textContent = 'Frontend Engineer';
-whatIAm.textContent = `And I'm a ${job}`;
+whatIAm.textContent = `And I'm a ${job.textContent}`;
 contentDiv.appendChild(whatIAm);
 
 const randomText = document.createElement('p');
@@ -100,7 +101,7 @@ socialDiv.appendChild(instagram);
 const linkedIn = document.createElement('a');
 linkedIn.setAttribute('href', '#');
 const link = document.createElement('i');
-link.setAttribute('class', 'bx bxl-linkedIn');
+link.setAttribute('class', 'bx bxl-linkedin');
 linkedIn.appendChild(link);
 socialDiv.appendChild(linkedIn);
 
@@ -115,5 +116,6 @@ imgDiv.setAttribute('class', 'home-img');
 section.appendChild(imgDiv);
 
 const img = document.createElement('img');
-img.setAttribute('src', './images/personal-portfolio-pic.png');
+img.src = './images/personal-portfolio-pic.png';
+
 imgDiv.appendChild(img);

@@ -103,6 +103,9 @@ body {
     font-size: 1.6rem;
     /*width: 900px;*/
 }
+.home-content span {
+    color: var(--main-color);
+}
 
 .social-media a {
     display: inline-flex;
@@ -116,6 +119,7 @@ body {
     color: var(--second-bg-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.5s ease;
+    border: 2rem solid var(--main-color);
 }
 
 .social-media a:hover {
