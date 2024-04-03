@@ -66,6 +66,7 @@ contentDiv.appendChild(myName);
 const whatIAm = document.createElement('h3');
 const job = document.createElement('span');
 job.textContent = 'Frontend Engineer';
+contentDiv.append(job);
 whatIAm.textContent = `And I'm a ${job.textContent}`;
 contentDiv.appendChild(whatIAm);
 
