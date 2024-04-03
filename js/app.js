@@ -51,16 +51,69 @@ section.setAttribute('class', 'home');
 section.setAttribute('id', 'home');
 body.appendChild(section);
 const contentDiv = document.createElement('div');
+contentDiv.setAttribute('class', 'home-content');
+section.appendChild(contentDiv);
 
 const hello = document.createElement('h3');
+hello.textContent = "Hello, It's Me";
+contentDiv.appendChild(hello);
 
-const name = document.createElement('h1');
+const myName = document.createElement('h1');
+myName.textContent = 'Tevin Crite';
+contentDiv.appendChild(myName);
 
 const whatIAm = document.createElement('h3');
 const job = document.createElement('span');
+job.textContent = 'Frontend Engineer';
+whatIAm.textContent = `And I'm a ${job}`;
+contentDiv.appendChild(whatIAm);
 
 const randomText = document.createElement('p');
+randomText.textContent = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus aut quos commodi ex dignissimos praesentium enim harum';
+contentDiv.appendChild(randomText);
 
 const socialDiv = document.createElement('div');
+socialDiv.setAttribute('class', 'social-media');
+contentDiv.appendChild(socialDiv);
 
-const = document.createElement('a');
+const facebook = document.createElement('a');
+facebook.setAttribute('href', '#');
+const fb = document.createElement('i');
+fb.setAttribute('class', 'bx bxl-facebook');
+facebook.appendChild(fb);
+socialDiv.appendChild(facebook);
+
+const twitter = document.createElement('a');
+twitter.setAttribute('href', '#');
+const tweet = document.createElement('i');
+tweet.setAttribute('class', 'bx bxl-twitter');
+twitter.appendChild(tweet);
+socialDiv.appendChild(twitter);
+
+const instagram = document.createElement('a');
+instagram.setAttribute('href', '#');
+const insta = document.createElement('i');
+insta.setAttribute('class', 'bx bxl-instagram');
+instagram.appendChild(insta);
+socialDiv.appendChild(instagram);
+
+const linkedIn = document.createElement('a');
+linkedIn.setAttribute('href', '#');
+const link = document.createElement('i');
+link.setAttribute('class', 'bx bxl-linkedIn');
+linkedIn.appendChild(link);
+socialDiv.appendChild(linkedIn);
+
+const btn = document.createElement('a');
+btn.setAttribute('href', '#');
+btn.setAttribute('class', 'btn');
+btn.textContent = 'Download CV';
+contentDiv.appendChild(btn);
+
+const imgDiv = documemt.createElement('div');
+imgDiv.setAttribute('class', 'home-img');
+section.appendChild(imgDiv);
+
+const img = document.createElement('img');
+img.setAttribute('src', './images/personal-portfolio-pic.png');
+imgDiv.appendChild(img);
