@@ -67,7 +67,8 @@ const whatIAm = document.createElement('h3');
 const job = document.createElement('span');
 job.textContent = 'Frontend Engineer';
 contentDiv.append(job);
-whatIAm.textContent = `And I'm a ${job.textContent}`;
+whatIAm.textContent = `And I'm a `;
+whatIAm.append(job);
 contentDiv.appendChild(whatIAm);
 
 const randomText = document.createElement('p');
