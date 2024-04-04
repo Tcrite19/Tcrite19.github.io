@@ -3,10 +3,11 @@
 
 /*==================== sticky navbar ====================*/
 /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
-
+let header = document.querySelector('header');
+header.classList.toggle('sticky', window.scrollY > 100);
 /*==================== scroll reveal ====================*/
 /*==================== typed js ====================*/
-const body = document.querySelector('body');
+/*const body = document.querySelector('body');
 const pic = document.querySelector('personal-portfolio-pic.png');
 console.log(body);
 const header = document.createElement('header');
@@ -120,4 +121,4 @@ section.appendChild(imgDiv);
 const img = document.createElement('img');
 img.src = './images/personal-portfolio-pic.png';
 
-imgDiv.appendChild(img);
+imgDiv.appendChild(img);*/

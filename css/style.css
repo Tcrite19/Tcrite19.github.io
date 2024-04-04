@@ -101,8 +101,9 @@ body {
 
 .home-content p {
     font-size: 1.6rem;
-    /*width: 900px;*/
+    width: 900px;
 }
+
 .home-content span {
     color: var(--main-color);
 }
@@ -142,8 +143,7 @@ body {
 }
 
 .btn:hover {
-    box-shadow: none;
-    
+    box-shadow: none; 
 }
 
 .about {
@@ -188,6 +188,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-bottom: 5rem;
 }
 
 .services-container .services-box {
@@ -212,6 +213,12 @@ body {
 
 .services-box h3 {
     font-size: 2.6rem;
+    margin-top: 1.5rem;
+}
+
+.services-box p {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
 }
 
 .portfolio {
@@ -362,4 +369,42 @@ body {
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--second-bg-color);
+}
+
+@media (max-width: 1200px) {
+
+}
+
+
+
+
+@media (max-width: 991px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100px;
+        padding: 1rem 3%;
+        background: (var(--bg-color));
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: ;
+    }
 }
