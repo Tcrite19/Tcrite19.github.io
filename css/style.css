@@ -420,11 +420,11 @@ body {
       }
 
       .home {
-
+        flex-direction: column;
       }
 
       .home h3 {
-
+        font-size: 2.6rem;
       }
 
       .home h1 {
