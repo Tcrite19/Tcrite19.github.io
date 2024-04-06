@@ -26,6 +26,7 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', {orgin: 'top'});
 ScrollReveal().reveal('.home-img, .services-container, .contact-form', {origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
+ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'});
 /*==================== typed js ====================*/
 /*const body = document.querySelector('body');
 const pic = document.querySelector('personal-portfolio-pic.png');
