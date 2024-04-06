@@ -387,10 +387,18 @@ body {
     padding: 10rem 3% 2rem;
   }
 
+  .services {
+    padding-bottom: 7rem;
+  }
+
   .footer {
     padding: 2rem 3%;
     }
 }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
 
 @media (max-width: 768px) {
     #menu-icon {
@@ -440,5 +448,20 @@ body {
         flex-direction: column-reverse;
       }
 
-      
+      .about img {
+        width: 70vw;
+        margin-top: 4rem;
+      }
+
+      .services h2 {
+        margin-bottom: 3rem;
+      }
+
+      .portfolio h2 {
+        margin-bottom: 3rem;
+      }
+
+      .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
 }
