@@ -311,6 +311,10 @@ body {
     color: var(--second-bg-color);
 }
 
+#portfolio-2 {
+    height: 21vw;
+}
+
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -385,38 +389,66 @@ body {
 }
 
 /* Breakpoints */
-@media (max-width: 1200px) {
+
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vw;
+    }
+
+    .about-img img {
+        width: 90vw;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .header .logo {
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
+    .header #menu-icon {
+        margin-top: 5rem;
+        margin-right: 10rem;
+    }
+    .home {
+        width: 100%;
+    }
+    .header .navbar {
+        align-items: end;
+        margin-right: 10rem;
+    }
+    .home-content {
+        margin-left: 5rem;
+        text-align: center;
+    }
+    .home-content p {
+        width: auto;
+        margin-left: 3rem;
+    }
+    .about, .services, .portfolio, .contact, .footer {
+        margin-left: 10rem;
+    }
+}
+
+@media (max-width: 450px) {
     html {
-        font-size: 55%;
+        font-size: 50%;
+    }
+    .contact form .input-box input {
+        width: 100%;
     }
 }
 
-@media (max-width: 991px) {
-    .header {
-    padding: 2rem 3%;
-  }
-    
-  section {
-    padding: 10rem 3% 2rem;
-  }
-
-  .services {
-    padding-bottom: 7rem;
-  }
-
-  .footer {
-    padding: 2rem 3%;
-    }
-
-    .portfolio {
-        padding-bottom: 7rem;
-    }
-
-    .contact {
-        min-height: auto;
+@media (max-width: 615px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
     }
 }
-    
 
 @media (max-width: 768px) {
     #menu-icon {
@@ -484,36 +516,47 @@ body {
       }
 }
 
-@media (max-width: 615px) {
-    .portfolio-container {
-        grid-template-columns: 1fr;
+@media (max-width: 991px) {
+    .header {
+    padding: 2rem 3%;
+  }
+    
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .services {
+    padding-bottom: 7rem;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1200px) {
     html {
-        font-size: 50%;
+        font-size: 35%;
     }
-    .contact form .input-box input {
-        width: 100%;
+    body {
+        margin-left: 25rem;
+        padding: 25rem;
     }
-}
-
-@media (max-width: 365px) {
-    .home-img img {
-        width: 90vw;
+    .services {
+        flex-wrap: wrap;
     }
-
-    .about-img img {
-        width: 90vw;
+    .services-container {
+        flex-wrap: wrap;
     }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
+    .services-box {
+        flex-wrap: wrap;
     }
 }
