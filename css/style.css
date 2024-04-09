@@ -12,10 +12,10 @@
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #0ef;
+    --bg-color:#5CDB95;
+    --second-bg-color: #8ee4af;
+    --text-color: #edf5e1;
+    --main-color: #05386b;
 }
 
 html {
@@ -69,6 +69,12 @@ body {
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
+}
+
+#personal-pic {
+    border-style: outset ;
+    border-color: var(--second-bg-color);
+    border-width: 15px;
 }
 
 .home {
@@ -582,4 +588,3 @@ body {
         height: 21vw;
     }
 }
-.
